@@ -1,9 +1,10 @@
 ---
-title: No-budget-accessibility
+title: Low-Effort Accessibility
 description: 
   If you are like me and work for employers and clients who lack 
   awareness about the importance of accessibility but still want 
   to start integrating accessibility best-practices, this is for you.
+layout: base
 ---
 If you work as a frontend developer working for several clients, chances
 are that you heard there's "no budget for accessibility".
