@@ -1,0 +1,98 @@
+.breadcrumb ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  font-size: smaller;
+}
+
+.breadcrumb li {
+  background: var(--link-hover-bg);
+  min-height: 1em;
+  padding: .5em 1.5em;
+  border-radius: .25em;
+  position: relative;
+}
+
+.breadcrumb li:first-child {
+  padding-left: .5em;
+}
+
+.breadcrumb li:not(:first-child)::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  background: var(--bg);
+  border-radius: .25em;
+  width: 1em;
+  height: 100%;
+  clip-path: polygon(0 0, 0 100%, 100% 50%);
+}
+
+.breadcrumb li::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: '';
+  background: var(--bg);
+  border-radius: .25rem;
+  width: 1rem;
+  height: 100%;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 100% 50%, 0 0);
+}
+
+.breadcrumb a {
+  display: flex;
+  height: 100%;
+  gap: .25rem;
+  align-items: center;
+  color: var(--link-fg);
+  border-radius: .25rem;
+  text-decoration: none;
+
+}
+
+.breadcrumb svg {
+  display: none;
+  height: var(--step-0);
+}
+
+.breadcrumb a:hover {
+  color: var(--link-hover-fg);
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+
+  .breadcrumb li {
+    padding: .75rem 1.5rem;
+  }
+
+  .breadcrumb svg {
+    display: block;
+  }
+
+  .breadcrumb li:first-child span {
+    position: absolute;
+    font-size: 1px;
+    clip-path: path('M0 0');
+    width: 0;
+    height: 0;
+  }
+}
+
+@media screen and (max-width: 564px) {
+  
+  .breadcrumb li:nth-child(2):not(:last-of-type) {
+    display: none;
+  }
+
+  .breadcrumb a span {
+    max-width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}

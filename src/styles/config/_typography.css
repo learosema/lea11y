@@ -1,0 +1,37 @@
+body {
+  font-family: system-ui, sans-serif;
+  font-weight: normal;
+  font-size: 120%;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4 {
+  font-family: Superclarendon, 'Bookman Old Style', 'URW Bookman', 'URW Bookman L', 'Georgia Pro', Georgia, serif;
+  font-weight: 600;
+  line-height: 1.1;
+  color: var(--headline-color);
+}
+
+h1 {
+  color: var(--h1-color);
+}
+
+code {
+  color: var(--code-color);
+  background: var(--code-bg-color);
+  border-radius: 0.25rem;
+  font-family: 'Nimbus Mono PS', 'Courier New', monospace;
+  font-weight: 600;
+}
+
+a {
+  color: var(--anchor-color);
+}
+
+kbd {
+  background: var(--kbd-bg-color);
+  color: var(--kbd-color);
+  border-radius: 0.125em;
+  padding: 0.25em;
+}
+

@@ -1,0 +1,8 @@
+.wrapper {
+  width: min(100% - 3rem, var(--container-max, 80ch));
+  margin-inline: auto;
+}
+
+.wrapper--left {
+  margin-inline: 1rem auto;
+}

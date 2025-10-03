@@ -1,0 +1,31 @@
+.sidebar-layout {
+  border: 0.25rem solid currentColor;
+
+  > nav {
+    border-bottom: 0.25rem solid currentColor;
+    padding: 1rem;
+  }
+
+  > main {
+    padding-block-end: 3rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sidebar-layout {
+    display: grid;
+    grid-template-columns: 25ch minmax(min(50vw, 30ch), 1fr);
+    gap: 0.5rem;
+    width: 100%;
+    max-width: 100%;
+
+    > nav {
+      border-bottom: none;
+      border-right: 0.25rem solid currentColor;
+      grid-row: 1 / -1;
+    }
+  }
+
+
+}
+

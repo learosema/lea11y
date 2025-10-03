@@ -1,0 +1,36 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: 0.125em solid var(--focus-outline, currentColor);
+}
+
+html {
+  color-scheme: dark light;
+}
+
+/* stable scrollbar gutters */
+html {
+	overflow-y: scroll;
+}
+@supports (scrollbar-gutter: stable) {
+	html {
+		overflow-y: auto;
+		scrollbar-gutter: stable;
+	}
+}
+
+/* Animate focus outline */
+@media (prefers-reduced-motion: no-preference) {
+  :focus-visible {
+    transition: outline-offset 145ms cubic-bezier(0.25, 0, 0.4, 1);
+  }
+  :where(:not(:active)):focus-visible {
+    transition-duration: 0.25s;
+  }
+}
+
+:where(:not(:active)):focus-visible {
+  outline-offset: 5px;
+}
