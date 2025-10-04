@@ -1,5 +1,5 @@
 export default {
-  siteName: 'HTML Hacking Session',
+  siteName: 'lea11y',
   author: 'Lea Rosema',
-  root: process.env.ENV === 'production' ? 'https://learosema.github.io/html-hacking-session/' : ''
+  root: process.env.ENV === 'production' ? 'https://learosema.github.io/lea11y/' : ''
 }
