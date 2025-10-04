@@ -1,5 +1,6 @@
 .sidebar-layout {
-  border: 0.25rem solid currentColor;
+  border-top: 0.25rem solid currentColor;
+  border-bottom: 0.25rem solid currentColor;
   flex: 1 auto;
 
   > nav {

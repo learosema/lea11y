@@ -1,5 +1,5 @@
 ---
-title: Low-Effort Accessibility
+title: Low-Effort Things
 description: 
   If you are like me and work for employers and clients who lack 
   awareness about the importance of accessibility but still want 

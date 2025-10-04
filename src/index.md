@@ -5,5 +5,6 @@ layout: base
 ---
 This is Lea's accessibility website.
 
-It is under construction :D
+It is under construction.
 
+![under construction image from the 90s](./images/construction.gif)
