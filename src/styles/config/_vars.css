@@ -1,14 +1,17 @@
 :root {
   --h1-color: light-dark(#3f126c, #ffe3f1);
-  --headline-color: light-dark(deeppink, hotpink);
+  --headline-color: light-dark(rgb(151, 12, 86), hotpink);
   --anchor-color: light-dark(#12c, #9cf);
   --code-color: light-dark(#005b3e, #b9fff5);
   --code-bg-color: light-dark(#fafafc, #20202d);
   --kbd-bg-color: light-dark(rgb(255, 214, 234), #663399);
   --kbd-color: light-dark(#000, #fff);
-  --footer-bg-color: light-dark(#555, #000);
-  --footer-color: #fff;
+
+  --footer-fg-color: light-dark(#000, #fff);
+  --footer-bg1: light-dark(rgb(255, 195, 142), rgb(119, 83, 0));
+  --footer-bg2: light-dark(#fff, #000);
 
   --header-bg-color: light-dark(#def, #123);
   --header-color: light-dark(#111, #fff);
+  --aside-border: light-dark(pink, deeppink);
 }

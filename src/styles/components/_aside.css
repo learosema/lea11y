@@ -1,4 +1,4 @@
 aside {
-  border: 0.5rem solid red;
+  border: 0.5rem solid var(--aside-border);
   padding: 1rem;
 }
