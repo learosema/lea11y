@@ -1,6 +1,5 @@
 .header {
-  background: var(--footer-bg-color, #123) repeating-conic-gradient(#123 0 25%, #234 0 50%) 
-    50% / 64px 64px;
+  background: var(--header-bg-color);
   color: var(--header-color);
 
   padding: 1rem;
