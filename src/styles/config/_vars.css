@@ -6,8 +6,8 @@
   --code-bg-color: light-dark(#fafafc, #20202d);
   --kbd-bg-color: light-dark(rgb(255, 214, 234), #663399);
   --kbd-color: light-dark(#000, #fff);
-  --footer-bg-color: light-dark(#eee, #000);
-  --footer-color: light-dark(#111, #fff);
+  --footer-bg-color: light-dark(#555, #000);
+  --footer-color: #fff;
 
   --header-bg-color: light-dark(#def, #123);
   --header-color: light-dark(#111, #fff);
