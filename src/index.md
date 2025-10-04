@@ -2,6 +2,7 @@
 title: Welcome to lea11y
 description: This is Lea's accessibility website
 layout: base
+excludeFromReview: true
 ---
 This is Lea's accessibility website.
 

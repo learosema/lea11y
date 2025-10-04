@@ -5,6 +5,9 @@ description:
   awareness about the importance of accessibility but still want 
   to start integrating accessibility best-practices, this is for you.
 layout: base
+date: 2025-10-05
+reviewed:
+  - 2025-10-25 Lea Rosema <lea@lea.lgbt>
 ---
 If you work as a frontend developer working for several clients, chances
 are that you heard there's "no budget for accessibility".
@@ -14,9 +17,9 @@ accessibility checks into the development process.
 
 They are really low effort to follow.
 
-This will usually not guarantee you will get an accessible product in the end,
-but it usually saves you from having to do expensive "let's fix it afterwards"
-measures.
+The techniques below will not guarantee you will get an accessible product in 
+the end, but it usually saves you from having to do expensive
+"let's fix it afterwards"measures.
 
 ## Low hanging fruits
 
@@ -32,6 +35,9 @@ these problems alone would already improve accessibility significantly:
 - Empty buttons (without text)
 - Empty links (without text)
 - Missing document language
+
+
+
 
 ### Missing document language
 

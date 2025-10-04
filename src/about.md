@@ -2,6 +2,7 @@
 title: About
 description: What is lea11y and why did I make it?
 layout: base
+excludeFromReview: true
 ---
 This is my website which focuses around the topic of web accessibility.
 
