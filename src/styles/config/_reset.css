@@ -8,6 +8,7 @@
 
 html {
   color-scheme: dark light;
+  overflow-x: hidden;
 }
 
 /* stable scrollbar gutters */
