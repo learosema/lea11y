@@ -27,56 +27,23 @@ The [WEBAIM million report](https://webaim.org/projects/million/) mentions
 the 6 most common accessibility issues they found in a million webpages.
 
 They are usually easy to fix and even autodetectable. Focusing on
-these problems alone would already improve accessibility significantly:
+these problems alone would already improve accessibility significantly.
 
-- Low color contrast
-- Missing alternative text on images, videos and other non-text media
-- Missing labels on form controls
-- Empty buttons (without text)
-- Empty links (without text)
-- Missing document language
+You can click on each of these sub articles to learn more about the issues
+in detail.
 
+- [Low color contrast](./low-color-contrast.md)
+- [Missing alternative text](./missing-alt-text.md)
+- [Missing labels on form controls](./missing-labels.md)
+- [Empty buttons (without text)](./empty-buttons.md)
+- [Empty links (without text)](./empty-links.md)
+- [Missing document language](./missing-document-language.md)
 
+## Using automated tools to detect these
 
+## More low effort important things
 
-### Missing document language
+A lot of accessibility problems are not autdetectable. However,
+they are still relatively easy to fix. It's not rocket science.
 
-This one is usually trivial to fix. Or not when working in big
-enterprisey projects with a SPA architecture.
-
-You can append a `lang`-attribute to
-your `<html>` tag with the 2-letter language code of the language you use
-in your document.
-
-You can also add the `lang` attribute to other tags, which allows you to
-embed content in other languages to your page.
-
-## Keyboard navigation
-
-Keyboard navigation is also a "key" accessibility thing, literally.
-
-If your website or application is not keyboard-accessible, a lot of
-people will have a problem using it.
-
-### How to check
-
-If you are using Safari, be aware it has some weird behavior when it
-comes to the behavior of the <kbd>tab</kbd> key.
-Go into the settings, advanced to change this.
-Tick "Press tab to highlight each item on a webpage".
-
-- Hit <kbd>tab</kbd> and check:
-  - are all interactive items (links, buttons, inputs) accessible via keyboard?
-  - is the order of highlighted items logical to you?
-
-### Keyboard shortcuts
-
-Sometimes, it might make sense to provide a couple keyboard shortcuts.
-You can use the `accesskey` attribute on interactive elements to provide
-some shortcuts.
-
-Some websites include a micro library called `tiny-keys` to integrate a
-quick search (command/control K) or command palette (command/control P).
-
-But: be aware to test it with common screenreaders for conflicting key
-mappings.
+- Keyboard navigation

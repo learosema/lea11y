@@ -4,7 +4,7 @@ This one is also an auto-detectable issue: Whenever you have content
 which is not in text form, you will need to provide alternative text.
 In short: alt text.
 
-There are people who cannot see what is on an image. This includes but 
+There are people who cannot see what is on an image. This includes but
 is not limited to blind people, but also other visual impairments, such as
 low vision or colorblindness.
 
