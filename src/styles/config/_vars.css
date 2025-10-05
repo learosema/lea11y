@@ -8,8 +8,8 @@
   --kbd-color: light-dark(#000, #fff);
 
   --footer-fg-color: light-dark(#000, #fff);
-  --footer-bg1: light-dark(rgb(255, 195, 142), rgb(119, 83, 0));
-  --footer-bg2: light-dark(#fff, #000);
+  --footer-bg1: light-dark(rgb(252, 135, 217), rgb(80, 0, 69));
+  --footer-bg2: light-dark(#ffffff, #000);
 
   --header-bg-color: light-dark(#def, #123);
   --header-color: light-dark(#111, #fff);
