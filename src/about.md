@@ -33,7 +33,7 @@ paid daily work and client projects, despite new EU regulations.
 
 While I try to apply accessibility best-practices at work, there is often
 no budget for it, or it is considered as something to be fixed in the aftermath.
-Or they fix just the bare minimals to be compliant.
+Or they fix just the bare minimum to be compliant.
 
 I think this is structurally broken and needs to be fixed.
 
