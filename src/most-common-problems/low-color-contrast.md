@@ -1,5 +1,7 @@
-# Low color contrast
-
+---
+title: Low color contrast
+layout: base
+---
 Designers sometimes tend to select color combinations which
 won't work for people with low vision.
 

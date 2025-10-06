@@ -1,0 +1,13 @@
+.flexible-width {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .flexible-width {
+    max-width: var(--max-width, 500px);
+  }
+
+  .flexible-width--250 {
+    max-width: var(--max-width, 250px);
+  }
+}

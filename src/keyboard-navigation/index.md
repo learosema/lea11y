@@ -1,5 +1,7 @@
-# Keyboard navigation
-
+---
+title: Keyboard navigation
+layout: base
+---
 Keyboard navigation is also a "key" accessibility thing, literally.
 
 If your website or application is not keyboard-accessible, a lot of

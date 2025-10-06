@@ -1,4 +1,7 @@
-# Missing alternative text
+---
+title: Missing alternative text
+layout: base
+---
 
 This one is also an auto-detectable issue: Whenever you have content
 which is not in text form, you will need to provide alternative text.

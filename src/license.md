@@ -1,4 +1,6 @@
 ---
 title: License
+layout: base
+excludeFromReview: true
 ---
-The content of this web page is licensed under the , unless specified otherwise, 
+I dedicate this project into the public domain, see: <https://github.com/learosema/lea11y/blob/main/UNLICENSE>.

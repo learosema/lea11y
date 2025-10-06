@@ -4,19 +4,48 @@ description: What is lea11y and why did I make it?
 layout: base
 excludeFromReview: true
 ---
-This is my website which focuses around the topic of web accessibility.
+{% include "lea.njk" %}
 
-I'm neither IAAP certified nor working as an accessibility specialist.
-So, why did I make a website about accessibility then?
+Hello, I am Lea (she/her). I am a very experienced
+web frontend developer based in Hamburg with over a decade of work experience in
+web development.
 
-Because I think that you don't need to be an accessibility specialist
-and/or IAAP certified to make accessible websites.
+My focus is on accessibility, user experience development and web standards.
+I have worked with most common JavaScript frameworks (React, Angular, Vue and
+friends).
+
+Still, I prefer working with a more modern frontend architecture with a
+HTML-first approach and progressive enhancement.
+
+The web platform evolved a lot and don't necessarily require heavy JavaScript
+anymore.
+
+{% include "clearfloat.njk" %}
 
 ## Why?
 
-Because it matters. Sooner or later to your future self.
+I made this website for fun. In my spare time. This is (unfortunately) not
+related to my professional career.
 
-## But there are already
+I usually learn about accessibility in my unpaid spare time.
+Oddly enough, accessibility is very neglected in my
+paid daily work and client projects, despite new EU regulations.
+
+While I try to apply accessibility best-practices at work, there is often
+no budget for it, or it is considered as something to be fixed in the aftermath.
+Or they fix just the bare minimals to be compliant.
+
+I think this is structurally broken and needs to be fixed.
+
+So this is for me to have a healthy side project.
+To have some contrast to my daily work with the Heavy-JavaScript codebases.
+
+This one aims to have good performance and accessibility, following
+a html-first approach and modern web platform best practices.
+
+Additionally, I solidify my accessibility knowledge while building it.
+
+## "But there are already"
 
 Yes, there are already a lot of accessibility courses and other valuable
 resources.
@@ -24,13 +53,16 @@ resources.
 I find this reasoning a bit irritating. It's like saying: "Why should
 I bother making a website? There are already a lot of them online".
 
-Or worse: "Why bothering writing content for a website? Let AI do this for you,
+## "Let AI do this for you?"
+
+You may also have heard this from colleagues, employers, friends:
+"Why bothering writing content for a website? Let AI do this for you,
 so you have time for other things."
 
 When I let AI do it for me, I'd probably spend the "saved" time watching TV
 or playing video games. But this way, I wouldn't learn anything about accessibility.
 
-Writing is a way for me to learn.
+Writing is thinking. A way for me to learn.
 
 Furthermore, a lot of good accessibility content is behind a paywall. While
 I think accessibility expertise should be paid, I think the very basics should
@@ -43,21 +75,8 @@ feedback like this and I don't want to be part of the group of people who
 publish low-quality content, misinformation and bad techniques in accessibility.
 
 To be honest: this is where I need your help.
-I don't know whether my content is good.
-
-I usually learn about accessibility in my unpaid spare time.
-And not really in my career as a frontend developer, unfortunately.
-
-Confusingly, accessibility mostly doesn't matter too much in my paid job.
-There is often no budget for it, or it is considered as something
-to be fixed in the aftermath.
-
-I'm very frustrated about this and I think this is structurally broken
-and needs to be fixed, and using AI for magically fixing it is the
-wrong path.
-
-So, long story short: I would appreciate it very much if you review my content
-and report bugs, or directly correct them yourself.
+I would appreciate it very much if you review my content and report bugs
+or directly correct them yourself.
 
 Low-barrier ways to do so are pull requests (probably via the in-place editing feature).
 

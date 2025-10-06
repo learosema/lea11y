@@ -1,4 +1,8 @@
-# Accessibility statement
+---
+title: Accessibility statement
+layout: base
+excludeFromReview: true
+---
 
 I'm trying my best to make this website as accessible as possible to everyone.
 

@@ -1,6 +1,14 @@
 {% if not excludeFromReview %}
-<aside>
-  <h2>Unreviewed content</h2>
-  <p>This content is unreviewed. It's probably total crap.</p>
-</aside>
+{% if reviewers and reviewers.length > 0 %}
+<h2>Reviewers</h2>
+{% for reviewer in reviewers %}
+{{ util.formatReviewer(reviewer) }}
+{% endfor %}
+
+{% else %}
+<section class="note">
+<h2>Unreviewed content</h2>
+<p>This content is unreviewed.</p>
+</section>
+{% endif %}
 {% endif %}

@@ -1,7 +1,8 @@
 # Contributing
 
 Thank you for considering contributing to this project!
-While I’m currently the sole developer, I’m more than happy to collaborate with contributors who want to improve the codebase.
+While I’m currently the sole developer, I’m more than happy to collaborate with
+contributors who want to improve the codebase.
 
 ## How to Contribute
 
@@ -14,7 +15,10 @@ While I’m currently the sole developer, I’m more than happy to collaborate w
 
 ## Code Quality and Formatting
 
-EditorConfig: Our .editorconfig sets standard settings (indentation, charset, newlines, etc.). Please make sure your IDE is honoring these settings.
+EditorConfig: Our .editorconfig sets standard settings
+(indentation, charset, newlines, etc.).
+
+Please make sure your IDE is honoring these settings.
 
 ## Commit Guidelines
 

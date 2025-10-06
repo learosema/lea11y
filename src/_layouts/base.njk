@@ -20,9 +20,11 @@
     <div class="sidebar-layout">
         {% include "sidebar.njk" %}
         <main class="wrapper">
-            <h1>{{ title }}</h1>
-            {% include "review-note.njk" %}
-            {{ content | safe }}
+            <article class="article flow">
+                <h1>{{ title }}</h1>
+                {% include "review-note.njk" %}
+                {{ content | safe }}
+            </article>
         </main>
     </div>
     {% endblock %}

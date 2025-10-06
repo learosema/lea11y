@@ -6,13 +6,15 @@ description:
   to start integrating accessibility best-practices, this is for you.
 layout: base
 date: 2025-10-05
+tags: ['sidenav']
 reviewed:
-  - 2025-10-25 Lea Rosema <lea@lea.lgbt>
+  - 2025-10-25 [Lea Rosema](lea@lea.lgbt)
 ---
 The [WEBAIM million report](https://webaim.org/projects/million/) mentions
 the 6 most common accessibility issues they found in a million webpages.
 
-They are usually straightforward to fix and, to some extent, even autodetectable. 
+They are usually straightforward to fix and, to some extent, even autodetectable.
+
 Focusing on these problems alone will not give you a 100% accessible output,
 but it would already improve accessibility significantly.
 
@@ -25,4 +27,3 @@ in detail.
 - [Empty buttons (without text)](./empty-buttons/)
 - [Empty links (without text)](./empty-links/)
 - [Missing document language](./missing-document-language/)
-

@@ -14,4 +14,7 @@
   --header-bg-color: light-dark(#def, #123);
   --header-color: light-dark(#111, #fff);
   --aside-border: light-dark(pink, deeppink);
+  --note-error: light-dark(pink, deeppink);
+  --note-warning: light-dark(#f93, #fb4);
+
 }

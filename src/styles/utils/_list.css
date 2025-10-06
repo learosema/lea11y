@@ -9,3 +9,8 @@ ul.list--none li {
   margin: 0;
 }
 
+ul.list--flex {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+}

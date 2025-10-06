@@ -1,0 +1,4 @@
+.note {
+  border: 0.25rem solid var(--note-error);
+  padding: 1rem;
+}
