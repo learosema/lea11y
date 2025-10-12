@@ -1,4 +1,6 @@
 :root {
+  --bg: light-dark(#fff, #111);
+  --fg: light-dark(#111, #fff);
   --h1-color: light-dark(#3f126c, #ffe3f1);
   --headline-color: light-dark(rgb(151, 12, 86), hotpink);
   --anchor-color: light-dark(#12c, #9cf);
@@ -16,5 +18,9 @@
   --aside-border: light-dark(pink, deeppink);
   --note-error: light-dark(pink, deeppink);
   --note-warning: light-dark(#f93, #fb4);
-
+  --link-fg: light-dark(#13f, #3bf);
+  --link-hover-fg: light-dark(#007, #fff);
+  --link-hover-bg: light-dark(#ebf, #312);
+  --breadcrumb-bg: light-dark(#ebf, #312);
+  --breadcrumb-fg: light-dark(#000, #fff);
 }

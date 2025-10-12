@@ -1,0 +1,15 @@
+
+{% set breadcrumb = collections.all | breadcrumb(page) %}
+<nav class="breadcrumb">
+  <ul>
+    <li><a href="/">Home</a></li>
+  {% for item in breadcrumb %}
+      <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+  {% endfor %}
+  </ul>
+</nav>
+
+
+
+
+

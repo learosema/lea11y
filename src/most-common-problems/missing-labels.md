@@ -36,3 +36,11 @@ box is usually very slow.
 If you don't like to have a visible label, there is the possibility to hide it for
 visual users without removing it from the accessibility tree. This way, screenreader
 users still get information about the text field when they focus it.
+
+Furthermore, `<label>` is an interactive element, even if it looks just like
+regular text by default.
+
+Clicking a label will focus the input field associated with it.
+This is especially helpful when you have a checkbox. Users usually expect that
+clicking the text would also toggle the checkbox. That's only a given
+with a `<label for="...">`.

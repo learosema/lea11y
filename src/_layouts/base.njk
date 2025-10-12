@@ -21,6 +21,7 @@
         {% include "sidebar.njk" %}
         <main class="wrapper">
             <article class="article flow">
+                {% include "breadcrumb.njk" %}
                 <h1>{{ title }}</h1>
                 {% include "review-note.njk" %}
                 {{ content | safe }}
