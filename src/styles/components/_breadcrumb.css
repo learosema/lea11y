@@ -1,85 +1,36 @@
-.breadcrumb ul {
+.breadcrumb {
   background: var(--breadcrumb-bg);
-  border-radius: 0.25rem;
+  color: var(--breadcrumb-fg);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-block-start: 1rem;
+}
+
+.breadcrumb ul {
   list-style: none;
   padding: 0;
+  margin: 0;
   display: flex;
+  align-items: center;
+  gap: 0.5em;
   flex-wrap: wrap;
-  gap: .25rem;
-  font-size: smaller;
 }
 
 .breadcrumb li {
-  min-height: 1em;
-  padding: .5em;
-  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
 }
 
 .breadcrumb li:not(:first-child)::before {
-  margin-inline-end: 2ch;
-  content: '::';
+  display: block;
+  content: '';
+  width: 1em;
+  background: currentColor;
+  height: 1em;
+clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0% 100%, 50% 50%, 0% 0%);
 }
 
 .breadcrumb a {
-  color: var(--breadcrumb-fg);
-  border-radius: .25rem;
-}
-
-.breadcrumb svg {
-  display: none;
-  height: var(--step-0);
-}
-
-.breadcrumb a:hover {
-  color: var(--breadcrumb-fg);
-  background: transparent;
-}
-
-@media screen and (min-width: 768px) {
-
-  .breadcrumb ul {
-    gap: .5rem;
-    background: transparent;
-    border-radius: 0;
-  }
-
-  .breadcrumb li {
-    background: var(--breadcrumb-bg);
-    padding: .5em 1.5em;
-    border-radius: .25em;
-  }
-
-  .breadcrumb a {
-    color: var(--breadcrumb-fg);
-  }
-
-  .breadcrumb li:first-child {
-    padding-left: .5em;
-  }
-
-  .breadcrumb li:not(:first-child)::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 0;
-    content: '';
-    background: var(--bg);
-    border-radius: .25em;
-    width: 1em;
-    height: 100%;
-    clip-path: polygon(0 0, 0 100%, 100% 50%);
-  }
-
-  .breadcrumb li::after {
-    position: absolute;
-    top: 0;
-    right: 0;
-    content: '';
-    background: var(--bg);
-    border-radius: .25rem;
-    width: 1rem;
-    height: 100%;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 100% 50%, 0 0);
-  }
-
+  color: var(--breadcrumb-fg);  
 }
