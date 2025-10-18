@@ -1,10 +1,10 @@
 .sidebar-layout {
-  border-top: 0.125rem solid currentColor;
-  border-bottom: 0.125rem solid currentColor;
+  border-top: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
   flex: 1 auto;
 
   > nav {
-    border-bottom: 0.125rem solid currentColor;
+    border-bottom: 1px solid currentColor;
     padding: 1rem;
   }
 
@@ -16,13 +16,21 @@
 @media screen and (min-width: 768px) {
   .sidebar-layout {
     display: grid;
-    grid-template-columns: 25ch minmax(min(50vw, 30ch), 1fr);
-    gap: 0.5rem;
+    grid-template-columns: 25ch minmax(min(50vw, 30ch), 1fr) 25ch;
 
     > nav {
       border-bottom: none;
-      border-right: 0.125rem solid currentColor;
       grid-row: 1 / -1;
+      
+      &.left {
+        border-right: 1px solid var(--fg);
+        grid-column: 1 / 2;
+      }
+
+      &.right {
+        border-left: 1px solid var(--fg);
+        grid-column: 3 / 4;
+      }
     }
   }
 

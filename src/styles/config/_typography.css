@@ -26,6 +26,10 @@ code {
 
 a {
   color: var(--anchor-color);
+
+  &[aria-current="page"] {
+    font-weight: bold;
+  }
 }
 
 kbd {

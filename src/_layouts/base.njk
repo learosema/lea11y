@@ -10,25 +10,29 @@
 </head>
 <body>
     {% block header %}
-    <header class="header">
-        <a href="{{ meta.root }}/">
-            <img class="logo" src="{{ meta.root }}/images/logo.svg" alt="lea11y logo, to start">
-        </a>
-    </header>
+        <header class="header">
+            <a href="{{ meta.root }}/">
+                <img class="logo" src="{{ meta.root }}/images/logo.svg" alt="lea11y logo, to start">
+            </a>
+        </header>
+        {% include "breadcrumb.njk" %}
     {% endblock %}
     {% block main %}
     <div class="sidebar-layout">
         {% include "sidebar.njk" %}
-        <main class="wrapper">
+        <div>
+            <main class="wrapper">
             <article class="article flow">
-                {% include "breadcrumb.njk" %}
                 <h1>{{ title }}</h1>
                 {% include "review-note.njk" %}
                 {{ content | safe }}
             </article>
-        </main>
+            </main>
+        </div>
+        {% include "subnav.njk" %}
     </div>
     {% endblock %}
+    
 
     {% include "footer.njk" %}
 </body>

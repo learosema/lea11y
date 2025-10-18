@@ -1,0 +1,14 @@
+
+{% if page.url != '/' %}
+{% set siblings = collections.all | siblings(page) %}
+{% if siblings.length > 1 %}
+<nav class="sub-nav right">
+  <h2>In this chapter</h2>
+  <ul>
+  {% for item in siblings %}
+      <li><a {% if item.url == page.url %}aria-current="page"{% endif %}href="{{ item.url }}">{{ item.title }}</a></li>
+  {% endfor %}
+  </ul>
+</nav>
+{% endif %}
+{% endif %}

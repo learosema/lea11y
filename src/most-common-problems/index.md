@@ -20,10 +20,3 @@ but it would already improve accessibility significantly.
 
 You can click on each of these sub articles to learn more about the issues
 in detail.
-
-- [Low color contrast](./low-color-contrast/)
-- [Missing alternative text](./missing-alt-text/)
-- [Missing labels on form controls](./missing-labels/)
-- [Empty buttons (without text)](./empty-buttons/)
-- [Empty links (without text)](./empty-links/)
-- [Missing document language](./missing-document-language/)

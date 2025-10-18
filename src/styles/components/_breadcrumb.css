@@ -1,9 +1,8 @@
 .breadcrumb {
   background: var(--breadcrumb-bg);
+  border-top: 1px solid var(--fg);
   color: var(--breadcrumb-fg);
-  padding: 1rem;
-  border-radius: 0.5rem;
-  margin-block-start: 1rem;
+  padding: 0.5rem 1rem;
 }
 
 .breadcrumb ul {
@@ -25,9 +24,9 @@
 .breadcrumb li:not(:first-child)::before {
   display: block;
   content: '';
-  width: 1em;
+  width: 0.6em;
+  height: 0.6em;
   background: currentColor;
-  height: 1em;
 clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0% 100%, 50% 50%, 0% 0%);
 }
 

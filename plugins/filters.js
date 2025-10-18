@@ -1,7 +1,20 @@
 
 export default (eleventyConfig) => {
-  eleventyConfig.addFilter("breadcrumb", (collections, page) => {
-    if (!page || typeof page.url !== "string" || !Array.isArray(collections)) return [];
+  const getCircularReplacer = () => {
+    const seen = new WeakSet();
+    return (key, value) => {
+      if (typeof value === "object" && value !== null) {
+        if (seen.has(value)) {
+          return;
+        }
+        seen.add(value);
+      }
+      return value;
+    };
+  };
+  eleventyConfig.addFilter("json", (data) => JSON.stringify(data, getCircularReplacer(), 2))
+  eleventyConfig.addFilter("breadcrumb", (collection, page) => {
+    if (!page || typeof page.url !== "string" || !Array.isArray(collection)) return [];
 
     // Normalize URL (ensure trailing slash)
     let url = page.url;
@@ -14,7 +27,7 @@ export default (eleventyConfig) => {
     for (const part of parts) {
       path += part + "/";
 
-      const match = collections.find(p => {
+      const match = collection.find(p => {
         if (!p || typeof p.url !== "string") return false;
         // Normalize collection URL for comparison
         const normalized = p.url.endsWith("/") ? p.url : p.url + "/";
@@ -34,27 +47,27 @@ export default (eleventyConfig) => {
   });
 
   // returns all siblings and itself 
-  eleventyConfig.addFilter("siblings", (collections, page) => {
-    if (!Array.isArray(collections) || typeof page.url !== "string") return [];
+  eleventyConfig.addFilter("siblings", (collection, page) => {
+    if (!Array.isArray(collection) || typeof page.url !== "string") return [];
 
     const parts = page.url.split("/").filter(Boolean);
+    if (parts.length === 0) {
+      return []
+    }
+    const parentUrl = "/" + parts[0] + "/";
 
-    const parentUrl =
-      parts.length <= 1
-        ? "/"
-        : "/" + parts.slice(0, -1).join("/") + "/";
-
-    return collections.filter(p => {
+    return collection.filter(p => {
       if (!p.url || typeof p.url !== "string") return false;
 
       // Keep only pages in the same folder level
       const pParts = p.url.split("/").filter(Boolean);
       const isSibling =
-        p.url.startsWith(parentUrl) &&
-        pParts.length === parts.length;
-
+        p.url.startsWith(parentUrl)
       return isSibling;
-    });
+    }).map(item => ({
+      title: item.data.title,
+      url: item.url
+    }))
   });
 
   eleventyConfig.addFilter('parent', (collections) => {

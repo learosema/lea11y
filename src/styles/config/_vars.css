@@ -21,6 +21,6 @@
   --link-fg: light-dark(#13f, #3bf);
   --link-hover-fg: light-dark(#007, #fff);
   --link-hover-bg: light-dark(#ebf, #312);
-  --breadcrumb-bg: light-dark(#ebf, #312);
+  --breadcrumb-bg: light-dark(#eee, #333);
   --breadcrumb-fg: light-dark(#000, #fff);
 }
