@@ -2,45 +2,134 @@
 title: Missing labels on form controls
 layout: base
 ---
-Often, there are input fields and you don't know what it is for.
-You often see this with search engine pages or search functions in general.
+Here's an input:
 
-For many users, this is probably not a problem on a search engine page,
-because they know it is a search field as the are on a search page.
+<input>
 
-But, well: what if not?
+```html
+<input>
+```
 
-Some website use icons as an alternative. Often, a magnifier icon is used to
-convey an input field to be a search field.
+It misses a label. Without a label, you don't know
+what it is for. It could be anything and you have no choice
+but to guess.
 
-But some users can't see this item. This can be due to blindness
-or low-vision eye conditions, for example.
+You sometimes see this with search pages. There's just a text box
+and most people guess it's a search field. Because, well, you're on
+a search page.
 
-Also, the meaning of a magnifier to convey "search" is probably less
-trivial than you think.
+But what if it is not obvious, like in the example above?
 
-## Labelling a form input
+Some sites try to fix this by putting a magnifier icon into the box.
+This works for some users. Others can't see it at all: blind users,
+people with low vision or folks with forced css themes that hide images.
 
-To associate a label to an input, use a `<label>` tag. Add an `id` attribute to
-the input and link to it on the label via a `for` attribute.
+And even if you can see it, the meaning of "magnifier" meaning "search" isn't universal.
+
+## Why labelling is important
+
+If a form field has no label, a screen reader might just announce
+
+"Edit text. Blank."
+
+There's no context and the user has no clue what to type.
+
+Putting an icon into the box won't help either, as the screen reader
+cannot interpret icons automatically.
+
+Putting a `<div>` next to the field is still not a proper label.
+When the text field is focused, the screen reader still won't
+announce the label of the text field. To be fair, it is already
+better than putting just an icon. But let's see how a proper
+label looks like.
+
+## Label your input
+
+To associate a label to an input, use a `<label>` tag with a `for`
+attribute. The `for` attribute points to an `id` of the input.
 
 ```html
 <label for="surname">Surname</label>
 <input id="surname">
 ```
 
-A usabilty win is: if you click on the label now, the input is focused.
-Especially, this is helpful for checkboxes, where the clickable area of the tick
-box is usually very slow.
+Alternatively, you can wrap the input within a label element:
 
-If you don't like to have a visible label, there is the possibility to hide it for
-visual users without removing it from the accessibility tree. This way, screenreader
-users still get information about the text field when they focus it.
+```html
+<label>
+    Surname
+    <input>
+</label>
+```
 
-Furthermore, `<label>` is an interactive element, even if it looks just like
-regular text by default.
+<strong>Bonus usability win:</strong> Clicking the label focuses the input.
 
-Clicking a label will focus the input field associated with it.
-This is especially helpful when you have a checkbox. Users usually expect that
-clicking the text would also toggle the checkbox. That's only a given
-with a `<label for="...">`.
+That’s especially nice for checkboxes, where the click
+area of the box itself is tiny.
+
+## Hiding the label
+
+If you don't want a label but want to keep an invisible label
+for screen reader users, you can use CSS. But be aware that
+`display: none` or `visibility: hidden` also removes it from the
+accessibility tree, so screen readers won't announce it.
+
+A common CSS technique is placing it off-screen or sizing it down
+to a pixel and clip it away. This way, the label is visually
+hidden but would still be announced by screen readers.
+
+```css
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+```
+
+## Using ARIA
+
+Instead of using a label with a `.visually-hidden` class, you can use ARIA labels.
+
+```html
+<input aria-label="Surname">
+
+
+<h2 id="surnameLabel">Enter your surname</h2>
+<input aria-labelledby="surnameLabel">
+```
+
+You can use `aria-label` to directly give it a label.
+Or `aria-labelledby` to reference another element by its `id`.
+
+Caveats: `aria-label` is sometimes not translated by automatic translation.
+Also, no usability win as explained above like with a proper `<label>` tag,
+so clicking the `<h2>` from the example above won't focus the text field.
+
+## Placeholders
+
+Be aware that placeholders don't replace labels.
+Placeholders go away as soon as the user types text.
+Also, screen readers often don't announce it.
+Additionally, placeholders can make a form field look as if
+the field is already filled in.
+
+I usually advise against using placeholders for this reason.
+If you still want to use placeholders, use them for example values
+but <strong>never for labelling the field</strong>.
+
+## Summary
+
+- Always give inputs a label
+- Don't rely on icons or placeholders
+- Labels are a usability win
+
+## Reference
+
+- [MDN: label](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/label)
+- [WCAG: Labels or instructions (Level A)](https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions)

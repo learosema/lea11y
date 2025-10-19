@@ -8,10 +8,11 @@ export default (eleventyConfig) => {
   eleventyConfig.addPlugin(syntaxHighlight);
   // custom watch targets
   eleventyConfig.addWatchTarget('src/images');
+  eleventyConfig.addWatchTarget('src/js');
 
   // passthrough copy
   eleventyConfig.addPassthroughCopy('src/images');  
-  //eleventyConfig.addPassthroughCopy('src/styles');
+  eleventyConfig.addPassthroughCopy('src/js');
 
   // Tell 11ty to use the .eleventyignore and ignore our .gitignore file
   eleventyConfig.setUseGitIgnore(false);

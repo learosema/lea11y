@@ -38,3 +38,27 @@ kbd {
   border-radius: 0.125em;
   padding: 0.25em;
 }
+
+input {
+  padding: 0.5em;
+}
+
+button {
+  padding: 0.5em 1em;
+  background: var(--button-bg);
+  color: var(--button-fg);
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  border-radius: 0.25em;
+
+  &:hover {
+    background: var(--button-hover-bg);
+    color: var(--button-hover-fg);
+  }
+
+  &:active {
+    background: var(--button-hover-bg);
+    color: var(--button-hover-fg);
+  }
+}

@@ -35,5 +35,9 @@
     
 
     {% include "footer.njk" %}
+    {% if script %}
+        <script type="module" src="{{ meta.root }}/js/{{ script }}"></script>
+    {% endif %}
+
 </body>
 </html>
