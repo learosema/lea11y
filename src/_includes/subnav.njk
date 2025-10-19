@@ -6,7 +6,7 @@
   <h2>In this chapter</h2>
   <ul>
   {% for item in siblings %}
-      <li><a {% if item.url == page.url %}aria-current="page"{% endif %}href="{{ item.url }}">{{ item.title }}</a></li>
+      <li><a {% if item.url == page.url %}aria-current="page"{% endif %}href="{{ meta.root }}{{ item.url }}">{{ item.title }}</a></li>
   {% endfor %}
   </ul>
 </nav>

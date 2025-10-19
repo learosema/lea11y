@@ -21,5 +21,4 @@ CPACC certification, but way less detailed.
 - Deafness
 - Motor disabilities
 - Cognitive disabilities
-- 
 - Laws and Regulations
