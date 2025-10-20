@@ -4,7 +4,7 @@
   <ul>
     <li><a href="/">Home</a></li>
   {% for item in breadcrumb %}
-      <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+      <li><a href="{{ meta.root }}{{ item.url }}">{{ item.title }}</a></li>
   {% endfor %}
   </ul>
 </nav>
