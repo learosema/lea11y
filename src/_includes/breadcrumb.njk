@@ -2,9 +2,9 @@
 {% set breadcrumb = collections.all | breadcrumb(page) %}
 <nav class="breadcrumb">
   <ul>
-    <li><a href="/">Home</a></li>
+    <li><a {% if item.url == page.url %}aria-current="page"{% endif %} href="{{ meta.root }}/">Home</a></li>
   {% for item in breadcrumb %}
-      <li><a href="{{ meta.root }}{{ item.url }}">{{ item.title }}</a></li>
+      <li><a {% if item.url == page.url %}aria-current="page"{% endif %} href="{{ meta.root }}{{ item.url }}">{{ item.title }}</a></li>
   {% endfor %}
   </ul>
 </nav>
