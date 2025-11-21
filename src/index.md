@@ -4,16 +4,17 @@ description: This is Lea's accessibility website
 layout: base
 excludeFromReview: true
 ---
-This is Lea's accessibility website.
+This is Lea's personal accessibility website.
 
-Lea is a very experienced senior frontend developer based in the Hamburg 
-area.
+Lea is a frontend developer based in the Hamburg area.
 
 Oddly enough, working in the industry for over a decade, accessibility is
 pretty neglected in her daily work.
 
-This is why she made this website. You can read more about her in
-the [About](./about/) page. Or dig right in.
+So, she has to learn a lot about accessibility.
+This is why she made this website. You can read more about her in the [About](./about/) page. 
+
+Or dig right in.
 
 As of current, most of the content is not reviewed yet.
 Chances are this content is not complete, outdated, or even total crap.
