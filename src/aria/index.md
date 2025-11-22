@@ -1,5 +1,7 @@
-# On ARIA
-
+---
+title: On ARIA
+layout: base
+---
 ARIA stands for <strong>Accessible Rich Internet Applications</strong>.
 
 It is a set of attributes that is used to add further information to HTML elements
