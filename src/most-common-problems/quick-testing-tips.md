@@ -1,5 +1,7 @@
-
-## Quick Accessibility Testing tips
+---
+title: Quick Testing tips
+layout: base
+---
 
 - Check the accessibility tree inside your browser developer tools
 - Check if the website is completely operable via keyboard

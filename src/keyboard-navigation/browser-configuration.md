@@ -1,5 +1,5 @@
 ---
-title: Browser Configuration for Keyboard
+title: Browser Configuration
 description: Some browsers need additional configuration to fully support keyboard navigation
 layout: base
 ---
