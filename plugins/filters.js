@@ -67,7 +67,7 @@ export default (eleventyConfig) => {
     }).map(item => ({
       title: item.data.title,
       url: item.url
-    })).sort((a,b) => (a.url.length < b.url.length))
+    })).sort((a,b) => (a.url.length < b.url.length) ? -1 : 1)
   });
 
   eleventyConfig.addFilter('parent', (collections) => {
