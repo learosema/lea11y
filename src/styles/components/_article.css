@@ -1,3 +1,9 @@
+.article {
+  padding-block-start: 1em;
+  padding-block-end: 5em;
+}
+
+
 .article figure > img {
   width: 100%;
   border-radius: 1rem;
