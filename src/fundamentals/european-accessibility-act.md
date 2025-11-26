@@ -22,4 +22,8 @@ less than 2 million €.
 The policy is not only about web accessibility, but also accessibility in real life,
 such as accessible banking terminals and accessible public transport.
 
+Some companies argue the law doesn't apply to them. For example, when they make B2B
+software, not targeted at end-users.
+
+
 The EAA is over here: <https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/union-equality-strategy-rights-persons-disabilities-2021-2030/european-accessibility-act_en>
