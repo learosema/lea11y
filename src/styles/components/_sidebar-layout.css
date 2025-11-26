@@ -14,10 +14,10 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1240px) {
   .sidebar-layout {
     display: grid;
-    grid-template-columns: 25ch minmax(min(50vw, 30ch), 1fr) 25ch;
+    grid-template-columns: 30ch minmax(min(50vw, 40ch), 1fr) 30ch;
 
     > nav {
       border-bottom: none;
