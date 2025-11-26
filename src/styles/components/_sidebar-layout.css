@@ -17,7 +17,7 @@
 @media screen and (min-width: 1240px) {
   .sidebar-layout {
     display: grid;
-    grid-template-columns: 30ch minmax(min(50vw, 40ch), 1fr) 30ch;
+    grid-template-columns: 25ch minmax(min(50vw, 40ch), 1fr) max(25vw, 25ch);
 
     > nav {
       border-bottom: none;
