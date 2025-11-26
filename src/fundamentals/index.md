@@ -7,15 +7,13 @@ fundamentals about disabilities. This is more
 non-technical but it's important for
 understanding the different needs of your users.
 
-This is pretty much what you need to learn for thr
-CPACC certification, but way less detailed.
+This is roughly what you need to learn for the
+CPACC certification, but way less detailed and not complete.
 
-- demographics
-- web dev considerations with accessibility in mind
+TODO:
+
 - temporary vs permanent vs situational
 - assistive technology
 - disability etiquette or how not to be an asshole
 - theory: medical vs social model of disability
 - inspiration exploitation
-- Cognitive disabilities
-- Laws and Regulations

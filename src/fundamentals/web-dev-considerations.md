@@ -37,12 +37,13 @@ There are a wide variety of vision impairments.
 - there are also browser-level overrides, so called user agent stylesheets.
 - Bright colors can cause pain. People often use eye-friendly themings, such as
   yellow text on black
-- vision can be blurry; users may struggle reading blocks of text
+- heavy CSS overrides (or loading no CSS at all) must not render the page
+  unreadable
+- vision can be blurry; users may struggle reading blocks of small text
 - small text (< 16px) should be avoided
 - dense line height (< 1.2) should be avoided.
-- enlarging the text should not break the page layout.
-  If it does break the page layout, it shouldn't render the
-  text unreadable.
+- enlarging the text should not break the page layout, at least up to 400%.
+  It shouldn't render the text unreadable.
 
 ## Deafness
 
@@ -77,10 +78,7 @@ There's also a wide variety of cognitive disabilities, such as
 - struggle with captchas, they are probably impossible to solve
 - struggle with overloaded pages
 - struggle with time limits (session timeout, 2FA)
-
-So:
-
-- don't overload the page
+- so provide a way to extend sessions
+- also implement a "save draft" for more complex forms, so users can finish it later
+- don't overload the page, blank space is your friend
 - use easy language
-- provide a way to extend sessions
-- implement a "save draft" for more complex forms, so users can finish it later
