@@ -40,7 +40,9 @@ There are a wide variety of vision impairments.
 - vision can be blurry; users may struggle reading blocks of text
 - small text (< 16px) should be avoided
 - dense line height (< 1.2) should be avoided.
-- enlarging the text to, say, 400% must not break the page layout
+- enlarging the text should not break the page layout.
+  If it does break the page layout, it shouldn't render the
+  text unreadable.
 
 ## Deafness
 
