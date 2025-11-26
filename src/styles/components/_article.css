@@ -1,6 +1,11 @@
 .article {
-  padding-block-start: 1em;
-  padding-block-end: 5em;
+  padding-block: 2rem;
+}
+
+@media screen and (min-width: 1240px) {
+  .article {
+    padding-block-end: 5rem;
+  }
 }
 
 
