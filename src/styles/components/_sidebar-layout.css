@@ -6,11 +6,8 @@
   > nav {
     border-bottom: 1px solid currentColor;
     padding-block: 2rem;
+    padding-inline: 1rem;
     margin-inline: auto;
-  }
-
-  > main {
-    padding-block-end: 3rem;
   }
 }
 
