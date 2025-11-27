@@ -3,7 +3,7 @@ title: Demographics
 layout: base
 ---
 
-According to D-Statis, there are 7.3 million people with a severe disability in Germany.
+According to DEStatis, there are 7.3 million people with a severe disability in Germany.
 That's 9.3%.
 
 When just taking the people into account who are 65 and older,
