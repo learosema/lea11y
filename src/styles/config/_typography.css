@@ -2,13 +2,13 @@ body {
   font-family: system-ui, sans-serif;
   font-weight: normal;
   font-size: 120%;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 h1, h2, h3, h4 {
   font-family: Superclarendon, 'Bookman Old Style', 'URW Bookman', 'URW Bookman L', 'Georgia Pro', Georgia, serif;
   font-weight: 600;
-  line-height: 1.1;
+  line-height: 1.2;
   color: var(--headline-color);
 }
 
