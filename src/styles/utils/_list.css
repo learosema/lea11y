@@ -1,16 +1,24 @@
-ul.list--none {
+:where(.list--none) {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-ul.list--none li {
+:where(ul.list--none li) {
   padding: 0;
   margin: 0;
 }
 
-ul.list--flex {
+:where(.list--flex) {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
   gap: 1em;
   flex-wrap: wrap;
+}
+
+:where(ul.list--flex li) {
+  padding: 0;
+  margin: 0;
 }

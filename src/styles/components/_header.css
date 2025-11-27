@@ -1,8 +1,8 @@
 .header {
   background: var(--header-bg-color);
   color: var(--header-color);
-
-  padding: 1rem;
+  padding-block: 3rem;
+  padding-inline: 1.5rem;
   & .logo {
     width: 502px;
     max-width: 100%;

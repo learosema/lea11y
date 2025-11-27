@@ -1,8 +1,8 @@
 .breadcrumb {
   background: var(--breadcrumb-bg);
-  border-top: 1px solid var(--fg);
+  margin-block-start: 0.1em;
   color: var(--breadcrumb-fg);
-  padding: 0.5rem 1rem;
+  padding: 1rem 1.5rem;
 }
 
 .breadcrumb ul {

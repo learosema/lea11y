@@ -1,0 +1,30 @@
+.top-nav {
+  padding-block: 2rem;
+  padding-inline: 1.5rem;
+
+  >ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem 1.5rem;
+
+    >li {
+      display: block;
+
+      >a {
+        padding: 0.5em 1em;
+        color: var(--nav-fg);
+        background: var(--nav-bg);
+        border-radius: 0.25em;
+        text-underline-offset: 2px;
+
+        &:hover {
+          color: var(--nav-bg);
+          background: var(--nav-fg);
+          text-underline-offset: 4px;
+        }
+      }
+    }
+
+
+  }
+}

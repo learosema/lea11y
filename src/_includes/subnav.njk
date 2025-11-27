@@ -3,12 +3,14 @@
 {% set siblings = collections.all | siblings(page) %}
 {% if siblings.length > 1 %}
 <nav class="sub-nav right">
+  <div class="flow wrapper">
   <h2>In this chapter</h2>
-  <ul>
+  <ul role="list" class="list--none">
   {% for item in siblings %}
       <li><a {% if item.url == page.url %}aria-current="page"{% endif %}href="{{ meta.root }}{{ item.url }}">{{ item.title }}</a></li>
   {% endfor %}
   </ul>
+  </div>
 </nav>
 {% endif %}
 {% endif %}

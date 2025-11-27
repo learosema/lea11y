@@ -23,6 +23,8 @@
   --link-hover-bg: light-dark(#ebf, #312);
   --breadcrumb-bg: light-dark(#eee, #333);
   --breadcrumb-fg: light-dark(#000, #fff);
+  --nav-fg: light-dark(#213, #dbf);
+  --nav-bg: light-dark(pink, #436);
 
 
   --button-bg: light-dark(rgb(255, 166, 210), rgb(128, 0, 64));

@@ -10,6 +10,7 @@
 @import "components/_header.css";
 @import "components/_footer.css";
 @import "components/_sidebar-layout.css";
+@import "components/_top-nav.css";
 @import "components/_note.css";
 
 @import "utils/_visually-hidden.css";

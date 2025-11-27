@@ -1,8 +1,9 @@
-*, *::before, *::after {
+:where(*), :where(*::before), :where(*::after) {
   box-sizing: border-box;
+  margin: 0;
 }
 
-*:focus {
+:where(*:focus) {
   outline: 0.125em solid var(--focus-outline, currentColor);
 }
 
